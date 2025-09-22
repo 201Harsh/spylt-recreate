@@ -16,6 +16,12 @@ const Product = () => {
               </div>
             </div>
           </div>
+          <div className="flex items-center w-1/5 justify-center flex-col absolute top-64 right-4 uppercase font-Antonio font-bold text-8xl">
+            <p className="font-inter text-sm font-semibold text-[#A16833] text-center">
+              Milk contains a wide array of nutrients, including vitamins,
+              minerals, and protein, and this is lactose free
+            </p>
+          </div>
         </div>
       </div>
     </>
