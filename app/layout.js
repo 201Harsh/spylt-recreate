@@ -1,4 +1,11 @@
 import "./globals.css";
+import localFont from "next/font/local";
+
+const inter = localFont({
+  src: "../public/fonts/ProximaNova-Regular.otf",
+  weight: "400",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "Spylt Recreate",
@@ -8,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="h-screen w-full">
+      <body className={inter.variable}>
         {children}
       </body>
     </html>
