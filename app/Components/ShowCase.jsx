@@ -18,7 +18,7 @@ const ShowCase = () => {
 
           {/* Image Section */}
 
-          <div className="flex justify-center items-center w-1/2 relative">
+          <div className="flex justify-center items-center w-1/2 relative pointer-events-none">
             <div className="flex gap-40 whitespace-nowrap w-full">
               {/* slider 1 */}
               <div className="min-w-full h-full overflow-x-hidden -rotate-6">
