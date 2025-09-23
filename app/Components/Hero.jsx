@@ -84,7 +84,7 @@ const Hero = () => {
         </video>
 
         <div className="h-full w-full absolute z-10 flex items-center justify-center px-4 sm:px-6 md:px-10">
-          <div className="w-full max-w-5xl text-center">
+          <div className="w-full max-w-3xl text-center">
             {/* Animated Heading */}
             <div className="animatedLetters">
               <h1 className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl uppercase font-extrabold h1-color font-Antonio">
