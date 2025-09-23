@@ -6,6 +6,7 @@ import Product from "./Components/Product";
 import Features from "./Components/Features";
 import Testimonial from "./Components/Testimonial";
 import PreFooter from "./Components/PreFooter";
+import Footer from "./Components/Footer";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <Features />
       <Testimonial />
       <PreFooter />
+      <Footer />
     </>
   );
 };
