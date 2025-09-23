@@ -29,8 +29,8 @@ const Hero = () => {
       opacity: 0,
       ease: "slow(0.7,0.7,false)",
       width: 0,
-      delay: 0.7,
-      duration: 0.5,
+      delay: 0.8,
+      duration: 0.3,
     });
 
     const splitedpara = SplitText.create(".animatedpara p", {
