@@ -75,7 +75,6 @@ const Message = () => {
             end: "+=150%",
             scrub: true,
             pin: true,
-            markers: true,
           },
         });
 
