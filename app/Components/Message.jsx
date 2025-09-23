@@ -78,19 +78,19 @@ const Message = () => {
           },
         });
 
-        tl.to(firstText.words, {
-          color: "#FAEADE",
-          duration: 0.15,
-          stagger: 0.5,
-          ease: "power2.out",
-        });
-
         tl.from(".ani-div", {
           x: -5,
           opacity: 0,
           ease: "power1.out",
-          delay: 0.02,
           duration: 0.25,
+        });
+
+        tl.to(firstText.words, {
+          color: "#FAEADE",
+          duration: 0.15,
+          delay: 0.02,
+          stagger: 0.5,
+          ease: "power2.out",
         });
 
         tl.to(secondText.words, {
