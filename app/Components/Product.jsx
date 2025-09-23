@@ -3,7 +3,7 @@ import React from "react";
 const Product = () => {
   return (
     <>
-      <div className="h-screen w-full bg-[#E9DECD] -mt-44">
+      <div className="h-screen w-full bg-[#E9DECD] -mt-40">
         <div className="pt-44 w-full h-full relative">
           <div className="w-full h-full flex items-center justify-center">
             <img src="/images/big-img.png" alt="" />
