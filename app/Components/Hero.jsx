@@ -72,52 +72,46 @@ const Hero = () => {
 
   return (
     <>
-      {/* Header */}
-      <div className="fixed z-50 w-full px-10 py-3 flex justify-between items-center">
-        <div>
-          <img src="images/nav-logo.svg" alt="logo" />
-        </div>
-        <div>
-          <h1>Menu</h1>
-        </div>
-        <div className="flex justify-center items-center">
-          <button className="bg-[#E2A458] cursor-pointer uppercase px-8 py-2 h1-color font-Antonio font-bold rounded-4xl">
-            Find in store
-          </button>
-        </div>
-      </div>
       {/* Hero Section */}
       <div className="h-screen w-full relative vid-div">
         <video
           autoPlay
           playsInline
           muted
-          className="h-full w-full object-cover absolute"
+          className="h-full w-full object-cover absolute z-0"
         >
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
         </video>
-        <div className="h-full w-full absolute z-10 flex items-center justify-center">
-          <div className="w-1/2">
+
+        <div className="h-full w-full absolute z-10 flex items-center justify-center px-4 sm:px-6 md:px-10">
+          <div className="w-full max-w-5xl text-center">
+            {/* Animated Heading */}
             <div className="animatedLetters">
-              <h1 className="text-8xl uppercase font-extrabold h1-color text-center font-Antonio whitespace-nowrap">
+              <h1 className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl uppercase font-extrabold h1-color font-Antonio">
                 Freaking Delicious
               </h1>
             </div>
-            <div className="bg-[#F9E6D6] p-2 mt-1 -rotate-3 animatedDiv">
-              <div className="flex items-center justify-center h1-bg-color px-6 py-6 overflow-hidden">
-                <h1 className="text-8xl uppercase font-extrabold h1-2color text-center font-Antonio whitespace-nowrap">
+
+            {/* Animated Div */}
+            <div className="bg-[#F9E6D6] p-2 mt-0 md:mt-3 -rotate-3 animatedDiv">
+              <div className="flex items-center justify-center h1-bg-color py-2 sm:px-4 md:px-6 md:py-6 overflow-hidden">
+                <h1 className="text-5xl sm:text-4xl md:text-6xl lg:text-8xl uppercase font-extrabold h1-2color text-center font-Antonio">
                   Protein + Caffeine
                 </h1>
               </div>
             </div>
+
+            {/* Paragraph */}
             <div className="flex justify-center animatedpara">
-              <p className="text-[1.04vw] w-2/3 font-semibold leading-tight text-[#7A5C4E] text-center font-inter mt-10">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-xl sm:max-w-2xl font-semibold leading-snug text-[#7A5C4E] font-inter mt-4 sm:mt-10">
                 Live life to the fullest with SPYLT: Shatter boredom and embrace
                 your inner kid with every deliciously smooth chug.
               </p>
             </div>
+
+            {/* Button */}
             <div className="flex justify-center btn">
-              <button className="bg-[#E2A458] uppercase px-14 py-4 h1-color font-Antonio font-extrabold rounded-3xl mt-10">
+              <button className="bg-[#E2A458] uppercase px-8 sm:px-12 md:px-14 py-3 sm:py-4 text-base sm:text-lg md:text-xl h1-color font-Antonio font-extrabold rounded-3xl mt-8 sm:mt-10">
                 Chug a spylt
               </button>
             </div>

@@ -7,10 +7,12 @@ import Features from "./Components/Features";
 import Testimonial from "./Components/Testimonial";
 import PreFooter from "./Components/PreFooter";
 import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 const page = () => {
   return (
     <>
+      <Navbar />
       <Hero />
       <Message />
       <ShowCase />
