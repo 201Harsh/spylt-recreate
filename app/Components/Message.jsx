@@ -22,7 +22,6 @@ const Message = () => {
         end: "+=300%", // keep pinned longer
         scrub: true,
         pin: true,
-        markers: true,
       },
     });
 
