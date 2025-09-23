@@ -7,6 +7,36 @@
   --font-Poppins: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url("../public/fonts/HelveticaNeueMedium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Black";
+  src: url("../public/fonts/HelveticaNeueBlack.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Heavy";
+  src: url("../public/fonts/HelveticaNeueHeavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url("../public/fonts/HelveticaNeueLight.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url("../public/fonts/HelveticaNeueLight.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  src: url("../public/fonts/HelveticaNeueThin.otf") format("truetype");
+}
+
 .font-Antonio {
   font-family: var(--font-Antonio);
 }
@@ -18,12 +48,28 @@
   font-family: var(--font-inter);
 }
 
+.font-HelveticaNeueMedium {
+  font-family: "Helvetica Neue Medium";
+}
+.font-HelveticaNeueBlack {
+  font-family: "Helvetica Neue Black";
+}
+.font-HelveticaNeueHeavy {
+  font-family: "Helvetica Neue Heavy";
+}
+.font-HelveticaNeueLight {
+  font-family: "Helvetica Neue Light";
+}
+.font-HelveticaNeueThin {
+  font-family: "Helvetica Neue Thin";
+}
+
 .h1-color {
   color: #523122;
 }
 .h1-2color {
-  color: #FCE1CD;
+  color: #fce1cd;
 }
 .h1-bg-color {
-  background-color: #A16833;
+  background-color: #a16833;
 }

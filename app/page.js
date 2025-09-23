@@ -4,7 +4,7 @@ import Message from "./Components/Message";
 import ShowCase from "./Components/ShowCase";
 import Product from "./Components/Product";
 import Features from "./Components/Features";
-import Video from "./Components/Video";
+import Testimonial from "./Components/Testimonial";
 
 const page = () => {
   return (
@@ -14,6 +14,7 @@ const page = () => {
       <ShowCase />
       <Product />
       <Features />
+      <Testimonial />
     </>
   );
 };
