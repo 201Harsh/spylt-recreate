@@ -71,7 +71,7 @@ const Message = () => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".msg-div",
-            start: "top center",
+            start: "10% center",
             end: "+=150%",
             scrub: true,
             pin: true,

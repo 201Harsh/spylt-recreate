@@ -73,7 +73,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="h-screen w-full relative vid-div">
+      <div className="h-screen w-full max-w-screen relative vid-div">
         <video
           autoPlay
           playsInline
