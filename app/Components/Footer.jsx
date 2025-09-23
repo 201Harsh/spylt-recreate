@@ -70,7 +70,7 @@ const Footer = () => {
       <video
         autoPlay
         muted
-        loop
+        playsInline
         className="h-full w-full object-cover absolute bottom-0 left-0 z-0"
       >
         <source src="/videos/splash3.webm" type="video/webm" />
