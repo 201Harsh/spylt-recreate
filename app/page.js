@@ -5,6 +5,7 @@ import ShowCase from "./Components/ShowCase";
 import Product from "./Components/Product";
 import Features from "./Components/Features";
 import Testimonial from "./Components/Testimonial";
+import PreFooter from "./Components/PreFooter";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Product />
       <Features />
       <Testimonial />
+      <PreFooter />
     </>
   );
 };
