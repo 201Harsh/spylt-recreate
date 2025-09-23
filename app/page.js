@@ -4,6 +4,7 @@ import Message from "./Components/Message";
 import ShowCase from "./Components/ShowCase";
 import Product from "./Components/Product";
 import Features from "./Components/Features";
+import Video from "./Components/Video";
 
 const page = () => {
   return (

@@ -1,8 +1,9 @@
 import React from "react";
+import Video from "./Video";
 
 const Features = () => {
   return (
-    <div className="w-full bg-[#222123] mt-14">
+    <div className="w-full bg-[#222123] mt-14 relative z-20">
       <div className="h-full w-full flex items-center justify-center relative">
         <div className="h-full pt-24">
           <p className="font-inter h1-2color text-center font-semibold text-sm">
@@ -42,13 +43,19 @@ const Features = () => {
           <p className="font-inter h1-2color text-center font-extralight text-sm">
             And much more...
           </p>
-          <div className="flex items-center justify-center p-4">
-            <div className="bg-[#1C2628] backdrop-blur-2xl p-14 rounded-full">
+          <div className="flex items-center justify-center p-4 relative">
+            <div className="bg-white/10 backdrop-blur-lg p-14 rounded-full">
+              <img
+                src="/images/circle-text.svg"
+                alt="play"
+                className="w-full h-full absolute top-0 left-0"
+              />
               <img src="/images/play.svg" alt="play" className="w-10 h-10" />
             </div>
           </div>
         </div>
       </div>
+      <Video />
     </div>
   );
 };
