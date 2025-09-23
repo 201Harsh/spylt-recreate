@@ -9,13 +9,13 @@ const Footer = () => {
         </h1>
       </div>
       <div className="w-full flex items-center justify-center mt-10 gap-4 relative z-10">
-        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer">
+        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer hover:bg-[#faeade1f] transition-all duration-200 ease-in hover:backdrop-blur-xs">
           <img src="/images/insta.svg" alt="" />
         </div>
-        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer">
+        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer hover:bg-[#faeade1f] transition-all duration-200 ease-in hover:backdrop-blur-xs">
           <img src="/images/yt.svg" alt="" />
         </div>
-        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer">
+        <div className="p-5 border border-[#faeade91] rounded-full cursor-pointer hover:bg-[#faeade1f] transition-all duration-200 ease-in hover:backdrop-blur-xs">
           <img src="/images/tiktok.svg" alt="" />
         </div>
       </div>
@@ -52,14 +52,29 @@ const Footer = () => {
           </form>
         </div>
       </div>
-        <video
-          autoPlay
-          muted
-          loop
-          className="h-full w-full object-cover absolute top-0 left-0 z-0"
-        >
-          <source src="/videos/splash3.webm" type="video/webm" />
-        </video>
+      <div className="w-full absolute bottom-0 flex items-center justify-between p-6 z-20">
+        <div className="w-full">
+          <p className="font-inter text-sm font-semibold text-[#FAEADE]">
+            Copyright © 2025 Spylt - All Rights Reserved
+          </p>
+        </div>
+        <div className="w-1/5 flex gap-4">
+          <p className="font-inter text-sm font-semibold text-[#FAEADE] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-50">
+            Privacy Policy
+          </p>
+          <p className="font-inter text-sm font-semibold text-[#FAEADE] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-50">
+            Terms & Conditions
+          </p>
+        </div>
+      </div>
+      <video
+        autoPlay
+        muted
+        loop
+        className="h-full w-full object-cover absolute bottom-0 left-0 z-0"
+      >
+        <source src="/videos/splash3.webm" type="video/webm" />
+      </video>
     </div>
   );
 };
