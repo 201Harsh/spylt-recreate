@@ -17,7 +17,7 @@ const Hero = () => {
 
     tl.from(splitedText.chars, {
       y: 100,
-      delay: 0.9,
+      delay: 1,
       duration: 0.8,
       opacity: 0,
       ease: "power4.out",
@@ -25,12 +25,11 @@ const Hero = () => {
     });
 
     gsap.from(".animatedDiv", {
-      x: 100,
       opacity: 0,
-      ease: "slow(0.7,0.7,false)",
-      width: 0,
-      delay: 0.8,
-      duration: 0.3,
+      y: -100,
+      ease: "power4.out",
+      delay: 0.99,
+      duration: 0.1,
     });
 
     const splitedpara = SplitText.create(".animatedpara p", {
