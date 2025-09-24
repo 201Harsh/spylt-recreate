@@ -12,7 +12,7 @@ const Features = () => {
       scrollTrigger: {
         trigger: ".pinned-div",
         start: "85% 80%",
-        end: "bottom 40%",
+        end: "+=650",
         scrub: true,
         pin: true,
         pinSpacing: false,
@@ -26,33 +26,12 @@ const Features = () => {
       duration: 0.8,
     });
 
-    tl.from(".div1-ani", {
+    tl.from([".div1-ani", ".div2-ani", ".div3-ani", ".div4-ani"], {
       x: 100,
       opacity: 0,
       ease: "back.out(1.7)",
       duration: 1.2,
-    });
-
-    tl.from(".div2-ani", {
-      x: 100,
-      width: 0,
-      opacity: 0,
-      ease: "back.out(1.7)",
-      duration: 1,
-    });
-
-    tl.from(".div3-ani", {
-      x: 100,
-      ease: "back.out(1.7)",
-      duration: 0.8,
-      opacity: 0,
-    });
-
-    tl.from(".div4-ani", {
-      x: 100,
-      ease: "back.out(1.7)",
-      duration: 1.4,
-      opacity: 0,
+      stagger: 0.5,
     });
 
     tl.from(".para2", {

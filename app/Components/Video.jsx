@@ -26,7 +26,7 @@ const Video = () => {
   });
 
   return (
-    <div className="h-screen w-full mt-44 relative z-[10] video-div">
+    <div className="h-screen w-full mt-96 relative z-[10] video-div">
       <div className="flex items-center justify-center p-4 relative overflow-hidden h-full w-full max-w-screen">
         <video
           autoPlay
