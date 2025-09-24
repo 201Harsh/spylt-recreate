@@ -17,8 +17,8 @@ const ShowCase = () => {
     if (!el) return;
 
     const handleMove = (e) => {
-      const elem = el.querySelector(".elem"); // drink image
-      const prod = el.querySelector(".prod"); // elements image
+      const elem = el.querySelector(".elem");
+      const prod = el.querySelector(".prod"); 
 
       if (elem) {
         gsap.to(elem, {
