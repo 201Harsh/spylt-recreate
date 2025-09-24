@@ -1,10 +1,39 @@
+"use client";
+import { useGSAP } from "@gsap/react";
 import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Video = () => {
+  useGSAP(() => {
+    gsap.to(".vid-pin", {
+      zIndex: 50,
+      delay: 0.5,
+      duration: 0.6,
+      ease: "circ.out",
+      height: "100vh",
+      width: "100%",
+      scrollTrigger: {
+        trigger: ".video-div",
+        start: "center center",
+        end: "bottom center",
+        scrub: true,
+        pin: true,
+      },
+    })
+  });
+
   return (
-    <div className="h-screen w-full relative z-[-10]">
-      <div className="flex items-center justify-center p-4 relative">
-        <video autoPlay muted loop className="h-24 w-24 object-cover absolute z-0 vid-pin">
+    <div className="h-screen w-full relative z-[-10] video-div">
+      <div className="flex items-center justify-center p-4 relative overflow-hidden h-full w-full max-w-screen">
+        <video
+          autoPlay
+          muted
+          loop
+          className="h-24 w-24 object-cover absolute z-0 vid-pin"
+        >
           <source src="/videos/pin-video.mp4" type="video/mp4" />
         </video>
         <div className="bg-gray-900/10 backdrop-blur p-14 rounded-full">
