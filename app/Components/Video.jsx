@@ -12,7 +12,7 @@ const Video = () => {
       zIndex: 50,
       delay: 0.5,
       duration: 0.6,
-      ease: "circ.out",
+      ease: "slow(0.1,0.1,false)",
       height: "100vh",
       width: "100%",
       scrollTrigger: {
@@ -22,11 +22,11 @@ const Video = () => {
         scrub: true,
         pin: true,
       },
-    })
+    });
   });
 
   return (
-    <div className="h-screen w-full relative z-[-10] video-div">
+    <div className="h-screen w-full mt-44 relative z-[10] video-div">
       <div className="flex items-center justify-center p-4 relative overflow-hidden h-full w-full max-w-screen">
         <video
           autoPlay

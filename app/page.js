@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import Video from "./Components/Video";
 
 const Page = () => {
   const scrollRef = useRef(null);
@@ -42,6 +43,7 @@ const Page = () => {
       <ShowCase />
       <Product />
       <Features />
+      <Video />
       <Testimonial />
       <PreFooter />
       <Footer />
