@@ -10,6 +10,37 @@ const ShowCase = () => {
   const containerRef = useRef(null);
   const trackRef = useRef(null);
 
+  const productRefs = useRef([]);
+
+  useLayoutEffect(() => {
+  productRefs.current.forEach((el, i) => {
+    if (!el) return;
+
+    const handleMove = (e) => {
+      const elem = el.querySelector(".elem"); // drink image
+      const prod = el.querySelector(".prod"); // elements image
+
+      if (elem) {
+        gsap.to(elem, {
+          x: (e.clientX - window.innerWidth / 2) / 40,
+        });
+      }
+
+      if (prod) {
+        gsap.to(prod, {
+          y: (e.clientY - window.innerHeight / 2) / 10,
+          x: (e.clientX - window.innerWidth / 2) / 10,
+        });
+      }
+    };
+
+    el.addEventListener("mousemove", handleMove);
+
+    return () => el.removeEventListener("mousemove", handleMove);
+  });
+}, []);
+
+
   useGSAP(() => {
     if (!containerRef.current || !trackRef.current) return;
 
@@ -131,6 +162,7 @@ const ShowCase = () => {
           ].map((item, i) => (
             <div
               key={i}
+              ref={(el) => (productRefs.current[i] = el)}
               className={`slide relative min-w-[85vw] sm:min-w-[70vw] h-[60vh] sm:h-[70vh] flex-shrink-0 ${item.rotate}`}
             >
               <img
@@ -141,12 +173,12 @@ const ShowCase = () => {
               <img
                 src={`/images/${item.elements}`}
                 alt="elem"
-                className="absolute top-0 left-0 w-full h-full object-contain z-10"
+                className="absolute top-0 left-0 w-full h-full object-contain z-10 prod"
               />
               <img
                 src={`/images/${item.drink}`}
                 alt="item"
-                className="absolute top-0 left-0 w-full h-full object-contain z-20"
+                className="absolute top-0 left-0 w-full h-full object-contain z-20 elem"
               />
               <h1 className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-2xl sm:text-3xl md:text-5xl uppercase text-[#FAEADE] font-bold font-Antonio z-30">
                 {item.title}
