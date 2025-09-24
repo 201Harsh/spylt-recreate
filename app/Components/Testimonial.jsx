@@ -15,36 +15,19 @@ const Testimonial = () => {
         end: "+=3500",
         scrub: 5,
         pin: true,
-        markers: true,
       },
     });
 
-    const txt1 = SplitText.create(".txt-1", { type: "chars" });
-    const txt2 = SplitText.create(".txt-2", { type: "chars" });
-    const txt3 = SplitText.create(".txt-3", { type: "chars" });
-
-    tl.to(txt1.chars, {
+    tl.to([".txt-1", ".txt-3"], {
       x: 150,
-      duration: 0.2,
-      ease: "power1.out",
+      duration: 0.02,
+      ease: "power3.out",
       stagger: 0.05,
     });
-
-    tl.to(
-      txt2.chars,
-      {
-        x: -150,
-        duration: 0.2,
-        ease: "power1.out",
-        stagger: 0.05,
-      },
-      "<0.3"
-    );
-
-    tl.to(txt3.chars, {
-      x: 150,
-      duration: 0.2,
-      ease: "power1.out",
+    tl.to(".txt-2", {
+      x: -150,
+      duration: 0.02,
+      ease: "power3.out",
       stagger: 0.05,
     });
 
